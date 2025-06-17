@@ -1,31 +1,27 @@
+<!DOCTYPE html>
 <html>
 
 <head>
-    <title>HTML and CSS for Data Scientists</title>
+    <title>Input Form</title>
 </head>
-
 <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 
 <body>
-    <h1>Welcome to DSA</h1>
-    <h3>Introduction to HTML and CSS</h3>
-    <p>This <b><i>session</i></b> is about basics of html and css.
-        <br>First we will discuss about html.
-        <br>
-        <br>Please <a href="https://www.google.com">click here</a> to see the session recording
-
-        <img src="https://media.istockphoto.com/id/485371557/photo/twilight-at-spirit-island.jpg?s=612x612&w=0&k=20&c=FSGliJ4EKFP70Yjpzso0HfRR4WwflC6GKfl4F3Hj7fk="
-            width="250" alt="landscape">
-        <br>
-    <p class="p2">This is only a sample web page</p>
-    </p>
-
     <form action="/result" method="POST">
-        <label for="sl">Type your name here:</label>
-        <input type="text" id="user_name" name="user_name"><br>
+        <label for="sl">Sepal Length:</label>
+        <input type="text" id="sl" name="sl"><br>
+
+        <label for="sw">Sepal Width:</label>
+        <input type="text" id="sw" name="sw"><br>
+
+        <label for="pl">Petal Length:</label>
+        <input type="text" id="pl" name="pl"><br>
+
+        <label for="pw">Petal Width:</label>
+        <input type="text" id="pw" name="pw"><br>
+
         <button type="submit">Submit</button>
     </form>
-
 </body>
 
 </html>
