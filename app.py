@@ -25,3 +25,7 @@ def result_page():
     pred = lr_model.predict(np.array([[sl, sw, pl, pw]]))[0]
 
     return render_template("result.html", prediction=pred)
+
+
+if __name__ == "__main__":
+    app.run(port=8000)
