@@ -18,8 +18,8 @@ def result_page():
     pl = int(request.form["pl"])
     pw = int(request.form["pw"])
 
-    file_name = "lr_model.pkl"
-    with open(path.join("static", file_name), "rb") as f:
+    model_path = path.join(app.root_path, "static", "lr_model.pkl")
+    with open(model_path, "rb") as f:
         lr_model = pickle.load(f)
 
     pred = lr_model.predict(np.array([[sl, sw, pl, pw]]))[0]
