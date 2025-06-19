@@ -19,7 +19,7 @@ def result_page():
     pw = int(request.form["pw"])
 
     file_name = "lr_model.pkl"
-    with open(path.join("home", "sajilck", "flask-tutorial", file_name), "rb") as f:
+    with open(path.join("static", file_name), "rb") as f:
         lr_model = pickle.load(f)
 
     pred = lr_model.predict(np.array([[sl, sw, pl, pw]]))[0]
