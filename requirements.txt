@@ -1,7 +1,0 @@
-Brotli==1.0.9
-certifi==2022.12.7
-gunicorn==20.0.4
-mutagen==1.46.0
-pycryptodomex==3.17
-websockets==11.0.2
-yt-dlp @ https://github.com/yt-dlp/yt-dlp/archive/master.tar.gz
